@@ -20,6 +20,5 @@ public class AirQualityAMQPConsumerApp implements CommandLineRunner {
 
 	@Override
 	public void run(String... args) {
-		// run
 	}
 }
