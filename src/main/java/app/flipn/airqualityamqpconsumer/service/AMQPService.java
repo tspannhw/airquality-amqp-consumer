@@ -27,7 +27,9 @@ public class AMQPService {
     public class RabbitMQConsumer {
         @RabbitListener(queues = "${amqp.topic:amqp-airquality}")
         public void receiveMessage(String obs) {
-            log.info("RabbitMQ: " + obs);
+
+            log.info("Topic Name: {}", topicName);
+            log.info("RabbitMQ: {}", obs);
         }
     }
 }

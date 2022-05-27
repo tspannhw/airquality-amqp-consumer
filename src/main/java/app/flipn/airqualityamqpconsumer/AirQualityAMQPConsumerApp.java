@@ -15,10 +15,12 @@ public class AirQualityAMQPConsumerApp implements CommandLineRunner {
 	 * @param args
 	 */
 	public static void main(String[] args) {
+
 		SpringApplication.run(AirQualityAMQPConsumerApp.class, args);
 	}
 
 	@Override
 	public void run(String... args) {
+		log.info("Starting amqp");
 	}
 }
